@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/Frg_H_ad"
+       android:background="@color/black"
+       android:layout_width="match_parent"
+       android:layout_height="100dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Frg_H_brand"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Frg_H_ad"
+        android:background="@color/cardview_light_background" />
+
+    <LinearLayout
+        android:id="@+id/Frg_H_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Frg_H_brand"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/Btn_CfeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="원두 리스트"/>
+
+        <Button
+            android:id="@+id/Btn_RostaryList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="로스터리 리스트"/>
+
+        <Button
+            android:id="@+id/Btn_MyRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="나만의 레시피"/>
+
+        <Button
+            android:id="@+id/Btn_RecipeRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="레시피 랭킹"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Frg_H_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Frg_H_btn1"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/Btn_Live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="라이브"/>
+
+        <Button
+            android:id="@+id/Btn_Board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="게시판"/>
+
+        <Button
+            android:id="@+id/Btn_Machine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="머신 구매 페이지"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

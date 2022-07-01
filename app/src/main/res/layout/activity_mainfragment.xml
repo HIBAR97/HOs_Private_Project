@@ -31,46 +31,48 @@
         android:id="@+id/MF_FrameLayout"
         android:layout_below="@id/MF_Layout_search"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="600dp">
 
     </FrameLayout>
 
     <LinearLayout
         android:id="@+id/MF_Layout_Btn"
-        android:layout_below="@+id/MF_FrameLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_below="@+id/MF_FrameLayout"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="5">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher_foreground"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher_foreground" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="랭킹"/>
+            android:text="랭킹" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="추출"/>
+            android:text="추출" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="마이페이지"/>
+            android:text="마이페이지" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_launcher_foreground"/>
+            android:src="@drawable/ic_launcher_foreground" />
     </LinearLayout>
 </RelativeLayout>

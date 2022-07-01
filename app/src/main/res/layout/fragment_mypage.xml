@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Frg_Mypage_Login"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="로그인"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="회원가입"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Frg_Mypage_List"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/Frg_Mypage_Login" />
+
+    <LinearLayout
+        android:id="@+id/Frg_Mypage_Coffe"
+        android:layout_below="@+id/Frg_Mypage_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Frg_Mypage_Tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="최근 본 원두" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Frg_Mypage_CycCfe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
