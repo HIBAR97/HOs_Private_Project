@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="50dp"
-            android:text="내 추출 레시피"/>
+            android:text="고객 센터"/>
     </LinearLayout>
 
     <LinearLayout
