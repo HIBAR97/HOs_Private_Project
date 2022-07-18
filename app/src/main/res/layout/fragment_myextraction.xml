@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        android:id="@+id/Frg_Extraction_text"
+        android:id="@+id/Frg_myExtraction_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -19,8 +19,8 @@
 
 
     <LinearLayout
-        android:id="@+id/Frg_Extraction_Btns"
-        android:layout_below="@+id/Frg_Extraction_text"
+        android:id="@+id/Frg_myExtraction_Btns"
+        android:layout_below="@+id/Frg_myExtraction_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -48,8 +48,8 @@
 </LinearLayout>
 
 <LinearLayout
-    android:id="@+id/Frg_Extraction_Frame"
-    android:layout_below="@+id/Frg_Extraction_Btns"
+    android:id="@+id/Frg_myExtraction_Frame"
+    android:layout_below="@+id/Frg_myExtraction_Btns"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
