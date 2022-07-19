@@ -34,12 +34,18 @@
         android:id="@+id/Frg_Extraction_Spinner"
         android:layout_below="@+id/Frg_Extraction_title"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="추출"
+            android:layout_gravity="right"/>
 
     </LinearLayout>
 
