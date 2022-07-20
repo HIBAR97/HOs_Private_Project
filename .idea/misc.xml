@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/layout/fragment_connect.xml" value="0.1828774062816616" />
         <entry key="app/src/main/res/layout/fragment_extraction.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/fragment_extraction_recipe.xml" value="0.1828774062816616" />
+        <entry key="app/src/main/res/layout/fragment_extraction_reclist.xml" value="0.1828774062816616" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_myextraction.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/fragment_mypage.xml" value="0.19067028985507245" />
