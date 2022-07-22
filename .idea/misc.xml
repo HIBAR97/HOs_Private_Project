@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/layout/activity_signin.xml" value="0.1828774062816616" />
         <entry key="app/src/main/res/layout/fragment_connect.xml" value="0.1828774062816616" />
         <entry key="app/src/main/res/layout/fragment_extraction.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_extraction_extraction.xml" value="0.1828774062816616" />
         <entry key="app/src/main/res/layout/fragment_extraction_recipe.xml" value="0.1828774062816616" />
         <entry key="app/src/main/res/layout/fragment_extraction_reclist.xml" value="0.1828774062816616" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22" />
