@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu">
+        <item
+            android:title="로그인"
+            android:icon="@mipmap/ic_launcher"/>
+
+        <item
+            android:title="스토어"
+            android:icon="@mipmap/ic_launcher"/>
+
+        <item
+            android:title="게시판"
+            android:icon="@mipmap/ic_launcher"/>
+
+        <item
+            android:title="원두"
+            android:icon="@mipmap/ic_launcher"/>
+
+        <item
+            android:title="브랜드 (로스터리)"
+            android:icon="@mipmap/ic_launcher"/>
+
+        <item
+            android:title="진행중인 이벤트"
+            android:icon="@mipmap/ic_launcher"/>
+    </group>
+
+</menu>
