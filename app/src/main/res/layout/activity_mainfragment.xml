@@ -30,16 +30,16 @@
 
     <FrameLayout
         android:id="@+id/MF_FrameLayout"
-        android:layout_below="@id/MF_Layout_search"
         android:layout_width="match_parent"
-        android:layout_height="600dp">
+        android:layout_height="500dp"
+        android:layout_below="@id/MF_Layout_search">
 
     </FrameLayout>
 
     <LinearLayout
         android:id="@+id/MF_Layout_Btn"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/MF_FrameLayout"
         android:layout_alignParentBottom="true"
         android:gravity="center"
@@ -47,30 +47,35 @@
         android:weightSum="5">
 
         <ImageButton
+            android:id="@+id/btn_MF_SideMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/ic_launcher_foreground" />
 
         <Button
+            android:id="@+id/btn_MF_Rank"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="랭킹" />
 
         <Button
+            android:id="@+id/btn_MF_Extrac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="추출" />
 
         <Button
+            android:id="@+id/btn_MF_MyPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="마이페이지" />
 
         <ImageButton
+            android:id="@+id/btn_MF_Home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -78,8 +83,10 @@
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:layout_width="match_parent"
+        android:id="@+id/Navi_MF_SideMenu"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:menu="@menu/drawer_menu"/>
+        android:visibility="invisible"
+        app:menu="@menu/drawer_menu" />
 
 </RelativeLayout>
