@@ -14,12 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@+id/Frg_H_ad"
-        android:background="@color/cardview_light_background" />
+        android:background="@color/purple_700" />
 
     <LinearLayout
         android:id="@+id/Frg_H_btn1"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/Frg_H_brand"
         android:orientation="horizontal"
         android:gravity="center"

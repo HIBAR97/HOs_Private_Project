@@ -35,7 +35,6 @@ public class MainFragment_Activity extends AppCompatActivity {
 
     boolean SideVis = false;
 
-    @SuppressLint("WrongViewCast")
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -43,7 +42,6 @@ public class MainFragment_Activity extends AppCompatActivity {
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_mainfragment);
-
 
         //----------연결--------------//
         btn_SideMenu = findViewById(R.id.btn_MF_SideMenu);
@@ -55,13 +53,13 @@ public class MainFragment_Activity extends AppCompatActivity {
         Navi_sideMenu = findViewById(R.id.Navi_MF_SideMenu);
 
         //--------플레그먼트 선언---------//
+        fragmentManager = getSupportFragmentManager();
 
         fragment_CoffeeRanking = new CoffeeRanking_Fragment();
         fragment_Extraction = new Extraction_Fragment();
         fragment_Mypage = new Mypage_Fragment();
         fragment_Home = new Home_Fragment();
 
-        fragmentManager = getSupportFragmentManager();
         transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.MF_FrameLayout, fragment_Home).commitAllowingStateLoss();
 
