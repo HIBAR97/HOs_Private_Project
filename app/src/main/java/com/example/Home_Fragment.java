@@ -10,6 +10,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
@@ -33,7 +34,6 @@ public class Home_Fragment extends Fragment {
         //플레그먼트 컨테이너
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        view = inflater.inflate(R.layout.fragment_coffeelsit, container, false);
 
         fragmentManager = getActivity().getSupportFragmentManager();
 
@@ -44,7 +44,7 @@ public class Home_Fragment extends Fragment {
         RecyclerView Ad = view.findViewById(R.id.Frg_H_ad);
         RecyclerView brand = view.findViewById(R.id.Frg_H_brand);
 
-        Button CfeList = view.findViewById(R.id.Btn_CfeList);
+        Button CfeList = (Button)view.findViewById(R.id.Btn_CfeList);
         Button RostaryList = view.findViewById(R.id.Btn_RostaryList);
         Button MyRecipe = view.findViewById(R.id.Btn_MyRecipe);
         Button RecipeRank = view.findViewById(R.id.Btn_RecipeRank);
