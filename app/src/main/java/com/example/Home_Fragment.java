@@ -26,6 +26,7 @@ public class Home_Fragment extends Fragment {
     private FragmentTransaction transaction;
 
     private CoffeeList_Fragment coffeeList_fragment;
+    private BrandList_Fragment brandList_fragment;
 
     @Nullable
     @Override
@@ -38,6 +39,7 @@ public class Home_Fragment extends Fragment {
         fragmentManager = getActivity().getSupportFragmentManager();
 
         coffeeList_fragment = new CoffeeList_Fragment();
+        brandList_fragment = new BrandList_Fragment();
 
 
         //----------선언--------------//
@@ -45,7 +47,7 @@ public class Home_Fragment extends Fragment {
         RecyclerView brand = view.findViewById(R.id.Frg_H_brand);
 
         Button CfeList = (Button)view.findViewById(R.id.Btn_CfeList);
-        Button RostaryList = view.findViewById(R.id.Btn_RostaryList);
+        Button BrandList = view.findViewById(R.id.Btn_BrandList);
         Button MyRecipe = view.findViewById(R.id.Btn_MyRecipe);
         Button RecipeRank = view.findViewById(R.id.Btn_RecipeRank);
 
@@ -59,14 +61,14 @@ public class Home_Fragment extends Fragment {
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
                 transaction.replace(R.id.MF_FrameLayout, coffeeList_fragment).commitAllowingStateLoss();
-
             }
         });
 
-        RostaryList.setOnClickListener(new View.OnClickListener() {
+        BrandList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                transaction = fragmentManager.beginTransaction();
+                transaction.replace(R.id.MF_FrameLayout, brandList_fragment).commitAllowingStateLoss();
             }
         });
 
