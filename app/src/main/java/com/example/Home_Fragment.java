@@ -4,18 +4,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
-
-import javax.crypto.Mac;
 
 
 public class Home_Fragment extends Fragment {
@@ -27,6 +23,7 @@ public class Home_Fragment extends Fragment {
 
     private CoffeeList_Fragment coffeeList_fragment;
     private BrandList_Fragment brandList_fragment;
+    private MyRecipe_Fragment myRecipe_fragment;
 
     @Nullable
     @Override
@@ -40,6 +37,7 @@ public class Home_Fragment extends Fragment {
 
         coffeeList_fragment = new CoffeeList_Fragment();
         brandList_fragment = new BrandList_Fragment();
+        myRecipe_fragment = new MyRecipe_Fragment();
 
 
         //----------선언--------------//
@@ -75,7 +73,8 @@ public class Home_Fragment extends Fragment {
         MyRecipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                transaction = fragmentManager.beginTransaction();
+                transaction.replace(R.id.MF_FrameLayout, myRecipe_fragment).commitAllowingStateLoss();
             }
         });
 
