@@ -12,44 +12,43 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class MyRecipe2_Fragment extends Fragment {
+public class MyRecipe3_Fragment extends Fragment {
 
     private View view;
+
 
     private FragmentManager fragmentManager;
     private FragmentTransaction transaction;
 
-    private MyRecipe3_Fragment myRecipe3_fragment;
+    private MyRecipe2_Fragment myRecipe2_fragment;
 
     @Nullable
     @Override
     public View onCreateView (@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_myrecipe2, container, false);
+        view = inflater.inflate(R.layout.fragment_myrecipe3, container, false);
 
         fragmentManager = getActivity().getSupportFragmentManager();
 
-        myRecipe3_fragment = new MyRecipe3_Fragment();
-
+        myRecipe2_fragment = new MyRecipe2_Fragment();
 
         //----------선언--------------//
-        Button btn_Prev = view.findViewById(R.id.Frg_myrecipe2_Prev);
-        Button btn_Next = view.findViewById(R.id.Frg_myrecipe2_Next);
-
+        Button btn_Prev = view.findViewById(R.id.Frg_myrecipe3_Prev);
+        Button btn_Next = view.findViewById(R.id.Frg_myrecipe3_Next);
 
         //---------리스너----------//
-        btn_Next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, myRecipe3_fragment).commitAllowingStateLoss();
-            }
-        });
-
         btn_Prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                transaction = fragmentManager.beginTransaction();
+                transaction.replace(R.id.MF_FrameLayout, myRecipe2_fragment).commitAllowingStateLoss();
+            }
+        });
+
+        btn_Next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
 

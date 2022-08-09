@@ -53,6 +53,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/Frg_myrecipe2_Prev"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -60,6 +61,7 @@
 
 
         <Button
+            android:id="@+id/Frg_myrecipe2_Next"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
