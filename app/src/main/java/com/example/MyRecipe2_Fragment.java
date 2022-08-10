@@ -19,6 +19,7 @@ public class MyRecipe2_Fragment extends Fragment {
     private FragmentManager fragmentManager;
     private FragmentTransaction transaction;
 
+    private MyRecipe_Fragment myRecipe_fragment;
     private MyRecipe3_Fragment myRecipe3_fragment;
 
     @Nullable
@@ -29,6 +30,7 @@ public class MyRecipe2_Fragment extends Fragment {
 
         fragmentManager = getActivity().getSupportFragmentManager();
 
+        myRecipe_fragment = new MyRecipe_Fragment();
         myRecipe3_fragment = new MyRecipe3_Fragment();
 
 
@@ -49,7 +51,8 @@ public class MyRecipe2_Fragment extends Fragment {
         btn_Prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                transaction = fragmentManager.beginTransaction();
+                transaction.replace(R.id.MF_FrameLayout, myRecipe_fragment).commitAllowingStateLoss();
             }
         });
 
