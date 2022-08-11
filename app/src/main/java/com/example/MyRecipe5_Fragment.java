@@ -12,46 +12,44 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class MyRecipe4_Fragment extends Fragment {
-
-    private View view;
+public class MyRecipe5_Fragment extends Fragment {private View view;
 
     private FragmentManager fragmentManager;
     private FragmentTransaction transaction;
 
-    private MyRecipe3_Fragment myRecipe3_fragment;
-    private MyRecipe5_Fragment myRecipe5_fragment;
+    private MyRecipe4_Fragment myRecipe4_fragment;
+//    private MyRecipe3_Fragment myRecipe6_fragment;
 
     @Nullable
     @Override
     public View onCreateView (@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
 
-        view = inflater.inflate(R.layout.fragment_myrecipe4, container, false);
+        view = inflater.inflate(R.layout.fragment_myrecipe5, container, false);
 
         fragmentManager = getActivity().getSupportFragmentManager();
 
-        myRecipe3_fragment = new MyRecipe3_Fragment();
-        myRecipe5_fragment = new MyRecipe5_Fragment();
+        myRecipe4_fragment = new MyRecipe4_Fragment();
+//        myRecipe6_fragment = new MyRecipe6_Fragment();
 
         //----------선언--------------//
-        Button btn_Prev = view.findViewById(R.id.Frg_myrecipe4_Prev);
-        Button btn_Next = view.findViewById(R.id.Frg_myrecipe4_Next);
+        Button btn_Prev = view.findViewById(R.id.Frg_myrecipe5_Prev);
+        Button btn_Next = view.findViewById(R.id.Frg_myrecipe5_Next);
 
         //---------리스너----------//
         btn_Prev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, myRecipe3_fragment).commitAllowingStateLoss();
+                transaction.replace(R.id.MF_FrameLayout, myRecipe4_fragment).commitAllowingStateLoss();
             }
         });
 
         btn_Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, myRecipe5_fragment).commitAllowingStateLoss();
+//                transaction = fragmentManager.beginTransaction();
+//                transaction.replace(R.id.MF_FrameLayout, myRecipe6_fragment).commitAllowingStateLoss();
             }
         });
         return view;

@@ -137,9 +137,9 @@
 
     <LinearLayout
         android:id="@+id/Frg_myrecipe4_Btn"
-        android:layout_below="@+id/Frg_myrecipe4_Spinner5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/Frg_myrecipe4_Spinner5"
         android:orientation="horizontal">
 
         <Button
@@ -147,7 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="left"
-            android:text="Prev"/>
+            android:text="Prev" />
 
 
         <Button
@@ -155,7 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:text="next"/>
+            android:text="next" />
 
     </LinearLayout>
 
