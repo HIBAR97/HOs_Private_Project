@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe5_TV1"
+        android:id="@+id/Frg_myrecipe6_TV1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="블루밍"
+            android:text="1차 추출"
             android:textSize="30dp"/>
 
         <TextView
@@ -28,8 +28,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe5_TV2"
-        android:layout_below="@+id/Frg_myrecipe5_TV1"
+        android:id="@+id/Frg_myrecipe6_TV2"
+        android:layout_below="@+id/Frg_myrecipe6_TV1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -46,8 +46,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe5_TV3"
-        android:layout_below="@+id/Frg_myrecipe5_TV2"
+        android:id="@+id/Frg_myrecipe6_TV3"
+        android:layout_below="@+id/Frg_myrecipe6_TV2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -65,8 +65,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe5_TV4"
-        android:layout_below="@id/Frg_myrecipe5_TV3"
+        android:id="@+id/Frg_myrecipe6_TV4"
+        android:layout_below="@id/Frg_myrecipe6_TV3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -74,7 +74,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1차 추출 시작 (분 초)"
+            android:text="2차 추출 시작 (분 초)"
             android:textSize="30dp"/>
 
         <Spinner
@@ -83,8 +83,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe5_TV5"
-        android:layout_below="@+id/Frg_myrecipe5_TV4"
+        android:id="@+id/Frg_myrecipe6_TV5"
+        android:layout_below="@+id/Frg_myrecipe6_TV4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -96,14 +96,14 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe5_Btn"
+        android:id="@+id/Frg_myrecipe6_Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Frg_myrecipe5_TV5"
+        android:layout_below="@+id/Frg_myrecipe6_TV5"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/Frg_myrecipe5_Prev"
+            android:id="@+id/Frg_myrecipe6_1_Prev"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="left"
@@ -111,7 +111,7 @@
 
 
         <Button
-            android:id="@+id/Frg_myrecipe5_Next"
+            android:id="@+id/Frg_myrecipe6_1_Next"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
