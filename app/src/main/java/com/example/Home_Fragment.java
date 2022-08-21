@@ -24,6 +24,7 @@ public class Home_Fragment extends Fragment {
     private CoffeeList_Fragment coffeeList_fragment;
     private BrandList_Fragment brandList_fragment;
     private MyRecipe_Fragment myRecipe_fragment;
+    private Board_Fragment board_fragment;
 
     @Nullable
     @Override
@@ -38,6 +39,7 @@ public class Home_Fragment extends Fragment {
         coffeeList_fragment = new CoffeeList_Fragment();
         brandList_fragment = new BrandList_Fragment();
         myRecipe_fragment = new MyRecipe_Fragment();
+        board_fragment = new Board_Fragment();
 
 
         //----------선언--------------//
@@ -95,7 +97,8 @@ public class Home_Fragment extends Fragment {
         Board.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                transaction = fragmentManager.beginTransaction();
+                transaction.replace(R.id.MF_FrameLayout, board_fragment).commitAllowingStateLoss();
             }
         });
 
