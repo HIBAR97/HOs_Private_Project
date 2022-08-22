@@ -60,7 +60,8 @@ public class Home_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, coffeeList_fragment).commitAllowingStateLoss();
+                //transaction.replace(R.id.MF_FrameLayout, coffeeList_fragment).commitAllowingStateLoss();
+                transaction.replace(R.id.MF_FrameLayout, coffeeList_fragment).addToBackStack(null).commit();
             }
         });
 
@@ -68,7 +69,7 @@ public class Home_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, brandList_fragment).commitAllowingStateLoss();
+                transaction.replace(R.id.MF_FrameLayout, brandList_fragment).addToBackStack(null).commit();
             }
         });
 
@@ -76,7 +77,7 @@ public class Home_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, myRecipe_fragment).commitAllowingStateLoss();
+                transaction.replace(R.id.MF_FrameLayout, myRecipe_fragment).addToBackStack(null).commit();
             }
         });
 
@@ -98,7 +99,7 @@ public class Home_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, board_fragment).commitAllowingStateLoss();
+                transaction.replace(R.id.MF_FrameLayout, board_fragment).addToBackStack(null).commit();
             }
         });
 
