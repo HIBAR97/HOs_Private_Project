@@ -43,7 +43,7 @@ public class MyRecipe4_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, myRecipe3_fragment).commitAllowingStateLoss();
+                transaction.replace(R.id.MF_FrameLayout, myRecipe3_fragment).addToBackStack(null).commit();
             }
         });
 
@@ -51,7 +51,7 @@ public class MyRecipe4_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.MF_FrameLayout, myRecipe5_fragment).commitAllowingStateLoss();
+                transaction.replace(R.id.MF_FrameLayout, myRecipe5_fragment).addToBackStack(null).commit();
             }
         });
         return view;
