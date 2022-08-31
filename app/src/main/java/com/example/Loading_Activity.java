@@ -21,7 +21,7 @@ public class Loading_Activity extends Activity {
                 finish();
             }
         };
-        handler.sendEmptyMessageDelayed(0,1500);
+        handler.sendEmptyMessageDelayed(0,1000);
     }
 }
 
