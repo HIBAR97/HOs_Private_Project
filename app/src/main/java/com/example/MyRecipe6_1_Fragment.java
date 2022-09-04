@@ -61,9 +61,9 @@ public class MyRecipe6_1_Fragment extends Fragment {
         });
 
         //---------어뎁터----------//
-//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.fragment_myrecipe6_1,spinner_Temp);
-//        spinner_Temp.setAdapter(adapter);
-//        spinner_Temp.setSelection(0);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.fragment_myrecipe6_1, spinner_Temp);
+        spinner_Temp.setAdapter(adapter);
+        spinner_Temp.setSelection(0);
 
         return view;
     }
