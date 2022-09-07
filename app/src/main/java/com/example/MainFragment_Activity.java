@@ -10,11 +10,11 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
@@ -46,6 +46,7 @@ public class MainFragment_Activity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        this.settingSideNavBar();
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_mainfragment);
@@ -118,6 +119,7 @@ public class MainFragment_Activity extends AppCompatActivity {
         });
 
     }
+
     /***
      *  -> 사이드 네브바 세팅
      *   - 클릭 아이콘 설정
@@ -126,16 +128,16 @@ public class MainFragment_Activity extends AppCompatActivity {
     public void settingSideNavBar()
     {
         // 툴바 생성
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById(R.id.MF_Layout_Sideabr);
+        setSupportActionBar(toolbar);
 
         // 사이드 메뉴를 오픈하기위한 아이콘 추가
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 //        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_dehaze_48);
 
         // 사이드 네브바 구현
-//        DrawerLayout drawLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        DrawerLayout drawLayout = (DrawerLayout) findViewById(R.id.DM_drawer);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.menu);
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
                 MainFragment_Activity.this,
@@ -165,7 +167,7 @@ public class MainFragment_Activity extends AppCompatActivity {
                 }
 
 
-                DrawerLayout drawer = findViewById(R.id.drawer_layout);
+                DrawerLayout drawer = findViewById(R.id.DM_drawer);
                 drawer.closeDrawer(GravityCompat.START);
                 return true;
             }
@@ -179,7 +181,7 @@ public class MainFragment_Activity extends AppCompatActivity {
      */
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.DM_drawer);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
