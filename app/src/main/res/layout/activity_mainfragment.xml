@@ -11,10 +11,15 @@
         android:orientation="horizontal"
         android:weightSum="3">
 
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="?attr/actionBarSize"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+        //사이드 메뉴바 (디자인 요구사항 미충족)
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:layout_width="?attr/actionBarSize"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="?attr/colorPrimary"-->
+<!--            android:src="@drawable/ic_launcher_foreground"/>-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/ic_launcher_foreground"/>
 
         <androidx.appcompat.widget.SearchView

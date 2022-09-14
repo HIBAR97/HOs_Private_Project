@@ -46,7 +46,7 @@ public class MainFragment_Activity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        this.settingSideNavBar();
+        //this.settingSideNavBar();
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_mainfragment);
@@ -120,73 +120,74 @@ public class MainFragment_Activity extends AppCompatActivity {
 
     }
 
-    /***
-     *  -> 사이드 네브바 세팅
-     *   - 클릭 아이콘 설정
-     *   - 아이템 클릭 이벤트 설정
-     */
-    public void settingSideNavBar()
-    {
-        // 툴바 생성
-        Toolbar toolbar = findViewById(R.id.MF_Layout_Sideabr);
-        setSupportActionBar(toolbar);
-
-        // 사이드 메뉴를 오픈하기위한 아이콘 추가
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_dehaze_48);
-
-        // 사이드 네브바 구현
-        DrawerLayout drawLayout = (DrawerLayout) findViewById(R.id.DM_drawer);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.menu);
-
-        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
-                MainFragment_Activity.this,
-                drawLayout,
-                toolbar,
-                R.string.open,
-                R.string.closed
-        );
-
-        // 사이드 네브바 클릭 리스너
-        drawLayout.addDrawerListener(actionBarDrawerToggle);
-
-        // -> 사이드 네브바 아이템 클릭 이벤트 설정
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-
-                int id = menuItem.getItemId();
-
-                if (id == R.id.menu_item1){
-                    Toast.makeText(getApplicationContext(), "메뉴아이템 1 선택", Toast.LENGTH_SHORT).show();
-                }else if(id == R.id.menu_item2){
-                    Toast.makeText(getApplicationContext(), "메뉴아이템 2 선택", Toast.LENGTH_SHORT).show();
-                }else if(id == R.id.menu_item3){
-                    Toast.makeText(getApplicationContext(), "메뉴아이템 3 선택", Toast.LENGTH_SHORT).show();
-                }
-
-
-                DrawerLayout drawer = findViewById(R.id.DM_drawer);
-                drawer.closeDrawer(GravityCompat.START);
-                return true;
-            }
-        });
-
-    }
-
-
-    /***
-     *  -> 뒤로가기시, 사이드 네브바 닫는 기능
-     */
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = findViewById(R.id.DM_drawer);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
+    //아래 코드는 사이드바 만드는 코드 (보류 - 디자인이 요구사항과 다를듯)
+//    /***
+//     *  -> 사이드 네브바 세팅
+//     *   - 클릭 아이콘 설정
+//     *   - 아이템 클릭 이벤트 설정
+//     */
+//    public void settingSideNavBar()
+//    {
+//        // 툴바 생성
+//        Toolbar toolbar = findViewById(R.id.MF_Layout_Sideabr);
+//        setSupportActionBar(toolbar);
+//
+//        // 사이드 메뉴를 오픈하기위한 아이콘 추가
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+////        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_dehaze_48);
+//
+//        // 사이드 네브바 구현
+//        DrawerLayout drawLayout = (DrawerLayout) findViewById(R.id.DM_drawer);
+//        NavigationView navigationView = (NavigationView) findViewById(R.id.menu);
+//
+//        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
+//                MainFragment_Activity.this,
+//                drawLayout,
+//                toolbar,
+//                R.string.open,
+//                R.string.closed
+//        );
+//
+//        // 사이드 네브바 클릭 리스너
+//        drawLayout.addDrawerListener(actionBarDrawerToggle);
+//
+//        // -> 사이드 네브바 아이템 클릭 이벤트 설정
+//        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+//
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+//
+//                int id = menuItem.getItemId();
+//
+//                if (id == R.id.menu_item1){
+//                    Toast.makeText(getApplicationContext(), "메뉴아이템 1 선택", Toast.LENGTH_SHORT).show();
+//                }else if(id == R.id.menu_item2){
+//                    Toast.makeText(getApplicationContext(), "메뉴아이템 2 선택", Toast.LENGTH_SHORT).show();
+//                }else if(id == R.id.menu_item3){
+//                    Toast.makeText(getApplicationContext(), "메뉴아이템 3 선택", Toast.LENGTH_SHORT).show();
+//                }
+//
+//
+//                DrawerLayout drawer = findViewById(R.id.DM_drawer);
+//                drawer.closeDrawer(GravityCompat.START);
+//                return true;
+//            }
+//        });
+//
+//    }
+//
+//
+//    /***
+//     *  -> 뒤로가기시, 사이드 네브바 닫는 기능
+//     */
+//    @Override
+//    public void onBackPressed() {
+//        DrawerLayout drawer = findViewById(R.id.DM_drawer);
+//        if (drawer.isDrawerOpen(GravityCompat.START)) {
+//            drawer.closeDrawer(GravityCompat.START);
+//        } else {
+//            super.onBackPressed();
+//        }
+//    }
 }
 
