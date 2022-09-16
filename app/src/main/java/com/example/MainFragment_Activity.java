@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -77,12 +78,21 @@ public class MainFragment_Activity extends AppCompatActivity {
             public void onClick(View view) {
                 if (SideVis == false) {
                     Navi_sideMenu.setVisibility(View.VISIBLE);
-                    SideVis = true;
                 }
-                else if(SideVis == true) {
-                    Navi_sideMenu.setVisibility(View.INVISIBLE);
-                    SideVis = false;
+            }
+        });
+
+        //네비게이션 버튼 리스너
+        Navi_sideMenu.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+
+
+                    case R.id.menu_item7:
+                        Navi_sideMenu.setVisibility(View.INVISIBLE);
                 }
+                return false;
             }
         });
 
@@ -117,6 +127,7 @@ public class MainFragment_Activity extends AppCompatActivity {
                 transaction.replace(R.id.MF_FrameLayout, fragment_Home).commitAllowingStateLoss();
             }
         });
+
 
     }
 
