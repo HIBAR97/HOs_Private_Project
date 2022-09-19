@@ -96,6 +96,7 @@ public class MainFragment_Activity extends AppCompatActivity {
             }
         });
 
+
         btn_Rank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -129,6 +130,11 @@ public class MainFragment_Activity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public void onBackPressed(){
+        Navi_sideMenu.setVisibility(View.INVISIBLE);
     }
 
     //아래 코드는 사이드바 만드는 코드 (보류 - 디자인이 요구사항과 다를듯)
