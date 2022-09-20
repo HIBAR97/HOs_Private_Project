@@ -11,7 +11,7 @@
         android:orientation="horizontal"
         android:weightSum="3">
 
-        //사이드 메뉴바 (디자인 요구사항 미충족)
+<!--        사이드 메뉴바 (디자인 요구사항 미충족)-->
 <!--        <androidx.appcompat.widget.Toolbar-->
 <!--            android:layout_width="?attr/actionBarSize"-->
 <!--            android:layout_height="?attr/actionBarSize"-->
