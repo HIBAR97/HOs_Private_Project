@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -24,8 +23,7 @@ public class MyRecipe6_1_Fragment extends Fragment {
     private MyRecipe5_Fragment myRecipe5_fragment;
     private MyRecipe6_2_Fragment myRecipe6_2_fragment;
 
-    String[] Temp = {"90","91","92","93","94","95","96"};
-    String Spinner_Text;
+    //String[] Temp = {"90","91","92","93","94","95","96"};
 
     @Nullable
     @Override
@@ -63,8 +61,9 @@ public class MyRecipe6_1_Fragment extends Fragment {
         });
 
         //---------어뎁터----------//
-        String  adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, Temp);
-        spinner_Temp.adapter = adapter;
+        ArrayAdapter<CharSequence> Temp_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Temp, android.R.layout.simple_spinner_dropdown_item);
+        spinner_Temp.setAdapter(Temp_adapter);
+        //spinner_Temp.adapter = Temp_adapter;
         spinner_Temp.setSelection(0);
 
         return view;
