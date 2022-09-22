@@ -42,6 +42,7 @@
             android:textSize="30dp"/>
 
         <Spinner
+            android:id="@+id/Frg_myrecipe6_Spinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -79,6 +80,7 @@
             android:textSize="30dp"/>
 
         <Spinner
+            android:id="@+id/Frg_myrecipe6_Spinner3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
