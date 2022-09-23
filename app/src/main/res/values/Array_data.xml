@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="Coffee_naeme">
+        <item>에티오피아 워르카 우 워시드</item>
+        <item>에티오피아 반코 고티티 무산소 내추럴</item>
+        <item>르완다 기쿰비 버번 워시드</item>
+        <item>에티오피아 (예가체프) 이디도 블러쉬 (내추럴)</item>
+    </string-array>
+
     <string-array name="Temp">
         <item>90</item>
         <item>91</item>
@@ -19,6 +26,13 @@
         <item>30</item>
         <item>60</item>
         <item>100</item>
+    </string-array>
+
+    <string-array name="Extration_Time">
+        <item>110</item>
+        <item>130</item>
+        <item>120</item>
+        <item>150</item>
     </string-array>
 
 </resources>

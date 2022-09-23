@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -38,6 +40,7 @@ public class MyRecipe2_Fragment extends Fragment {
         Button btn_Prev = view.findViewById(R.id.Frg_myrecipe2_Prev);
         Button btn_Next = view.findViewById(R.id.Frg_myrecipe2_Next);
 
+        Spinner spinner_Coffee_Name = view.findViewById(R.id.Frg_myrecipe2_Spinner1);
 
         //---------리스너----------//
         btn_Next.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +58,11 @@ public class MyRecipe2_Fragment extends Fragment {
                 transaction.replace(R.id.MF_FrameLayout, myRecipe_fragment).addToBackStack(null).commit();
             }
         });
+
+        //---------스피너 어뎁터----------//
+        ArrayAdapter<CharSequence> Coffee_Name_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Coffee_naeme, android.R.layout.simple_spinner_dropdown_item);
+        spinner_Coffee_Name.setAdapter(Coffee_Name_adapter);
+        spinner_Coffee_Name.setSelection(0);
 
         return view;
     }

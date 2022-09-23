@@ -39,9 +39,11 @@ public class MyRecipe6_1_Fragment extends Fragment {
         //----------선언--------------//
         Button btn_Prev = view.findViewById(R.id.Frg_myrecipe6_1_Prev);
         Button btn_Next = view.findViewById(R.id.Frg_myrecipe6_1_Next);
+
         Spinner spinner_Temp = view.findViewById(R.id.Frg_myrecipe6_Spinner1);
         Spinner spinner_Water = view.findViewById(R.id.Frg_myrecipe6_Spinner2);
         Spinner spinner_Water_Flow = view.findViewById(R.id.Frg_myrecipe6_Spinner3);
+        Spinner spinner_Extraction_Time = view.findViewById(R.id.Frg_myrecipe6_Spinner4);
 
         //---------리스너----------//
         btn_Prev.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +74,10 @@ public class MyRecipe6_1_Fragment extends Fragment {
         ArrayAdapter<CharSequence> Water_Flow_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Water_Flow, android.R.layout.simple_spinner_dropdown_item);
         spinner_Water_Flow.setAdapter(Water_Flow_adapter);
         spinner_Water_Flow.setSelection(0);
+
+        ArrayAdapter<CharSequence> Extraction_Time = ArrayAdapter.createFromResource(view.getContext(), R.array.Extration_Time, android.R.layout.simple_spinner_dropdown_item);
+        spinner_Extraction_Time.setAdapter(Extraction_Time);
+        spinner_Extraction_Time.setSelection(0);
 
         return view;
     }
