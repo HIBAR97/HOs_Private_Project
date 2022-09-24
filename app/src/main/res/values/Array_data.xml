@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="Coffee_naeme">
+    <string-array name="Coffee_name">
         <item>에티오피아 워르카 우 워시드</item>
         <item>에티오피아 반코 고티티 무산소 내추럴</item>
         <item>르완다 기쿰비 버번 워시드</item>
         <item>에티오피아 (예가체프) 이디도 블러쉬 (내추럴)</item>
+    </string-array>
+    
+    
+    <string-array name="Coffee_Brand_Name">
+        <item></item>
+    </string-array>
+    
+    <string-array name="Coffee_Variety">
+        <item>Ethiopia Heirloom</item>
+        <item>Bourbon</item>
+    </string-array>
+
+    <string-array name="Coffee_Origin">
+        <item>에티오피아</item>
+        <item>워르카</item>
+        <item>우리 스테이션</item>
+        <item>예가체프</item>
+        <item>반코 고티티 농장</item>
+        <item>르완다</item>
+        <item>기쿰비</item>
+        <item>이디도 스테아션</item>
+    </string-array>
+
+    <string-array name="Coffee_Processing">
+        <item>Washed(워시드)</item>
+        <item>Anaerobic Natural(무산소 내추럴)</item>
+        <item>Natural(내추럴)</item>
     </string-array>
 
     <string-array name="Temp">

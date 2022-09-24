@@ -41,6 +41,10 @@ public class MyRecipe2_Fragment extends Fragment {
         Button btn_Next = view.findViewById(R.id.Frg_myrecipe2_Next);
 
         Spinner spinner_Coffee_Name = view.findViewById(R.id.Frg_myrecipe2_Spinner1);
+        Spinner spinner_Coffee_Brand = view.findViewById(R.id.Frg_myrecipe2_Spinner2);
+        Spinner spinner_Coffee_Variety = view.findViewById(R.id.Frg_myrecipe2_Spinner3);
+        Spinner spinner_Coffee_Origin = view.findViewById(R.id.Frg_myrecipe2_Spinner4);
+        Spinner spinner_Coffee_Processing = view.findViewById(R.id.Frg_myrecipe2_Spinner5);
 
         //---------리스너----------//
         btn_Next.setOnClickListener(new View.OnClickListener() {
@@ -60,9 +64,25 @@ public class MyRecipe2_Fragment extends Fragment {
         });
 
         //---------스피너 어뎁터----------//
-        ArrayAdapter<CharSequence> Coffee_Name_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Coffee_naeme, android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> Coffee_Name_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Coffee_name, android.R.layout.simple_spinner_dropdown_item);
         spinner_Coffee_Name.setAdapter(Coffee_Name_adapter);
         spinner_Coffee_Name.setSelection(0);
+
+        ArrayAdapter<CharSequence> Coffee_Brand_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Coffee_Brand_Name, android.R.layout.simple_spinner_dropdown_item);
+        spinner_Coffee_Brand.setAdapter(Coffee_Brand_adapter);
+        spinner_Coffee_Brand.setSelection(0);
+
+        ArrayAdapter<CharSequence> Coffee_Varety_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Coffee_Variety, android.R.layout.simple_spinner_dropdown_item);
+        spinner_Coffee_Variety.setAdapter(Coffee_Varety_adapter);
+        spinner_Coffee_Variety.setSelection(0);
+
+        ArrayAdapter<CharSequence> Coffee_Origin_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Coffee_Origin, android.R.layout.simple_spinner_dropdown_item);
+        spinner_Coffee_Origin.setAdapter(Coffee_Origin_adapter);
+        spinner_Coffee_Origin.setSelection(0);
+
+        ArrayAdapter<CharSequence> Coffee_Processing_adapter = ArrayAdapter.createFromResource(view.getContext(), R.array.Coffee_Processing, android.R.layout.simple_spinner_dropdown_item);
+        spinner_Coffee_Processing.setAdapter(Coffee_Processing_adapter);
+        spinner_Coffee_Processing.setSelection(0);
 
         return view;
     }
