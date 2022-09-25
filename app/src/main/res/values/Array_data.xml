@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+<!--    MyRecipe2 array-->
     <string-array name="Coffee_name">
         <item>에티오피아 워르카 우 워시드</item>
         <item>에티오피아 반코 고티티 무산소 내추럴</item>
@@ -34,6 +36,51 @@
         <item>Natural(내추럴)</item>
     </string-array>
 
+    <!--    MyRecipe3 array-->
+    <string-array name="Recommend_Water">
+        <item>추천 생수, ppm(or mg/L)</item>
+    </string-array>
+    
+    <string-array name="Crushing_Degree">
+        <item>분쇄도 (EK43 11.5 = 코만단테 29 = 엔코 19 오드 = 3.75)</item>
+    </string-array>
+
+    <string-array name="Roasting">
+        <item>로스팅 정도</item>
+    </string-array>
+
+    <string-array name="Production_Year">
+        <item>생산 년도</item>
+    </string-array>
+
+    <!--    MyRecipe4 array-->
+    <string-array name="Hot_Ice">
+        <item>핫 OR 아이스</item>
+        <item>핫</item>
+        <item>아이스</item>
+    </string-array>
+    
+    <string-array name="Used_Beans">
+        <item>15g</item>
+    </string-array>
+
+    <string-array name="Water_mess"> //6-1, 
+        <item>240</item>
+        <item>270</item>
+    </string-array>
+    
+    <string-array name="Blooming">
+        <item>유</item>
+        <item>무</item>
+    </string-array>
+    
+    <string-array name="Extraction_Num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <!--    MyRecipe6_1 array-->
     <string-array name="Temp">
         <item>90</item>
         <item>91</item>
@@ -42,11 +89,6 @@
         <item>94</item>
         <item>95</item>
         <item>96</item>
-    </string-array>
-
-    <string-array name="Water_mess">
-        <item>240</item>
-        <item>270</item>
     </string-array>
 
     <string-array name="Water_Flow">

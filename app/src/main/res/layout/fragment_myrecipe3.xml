@@ -24,21 +24,25 @@
         android:orientation="vertical">
 
         <Spinner
+            android:id="@+id/Frg_myrecipe3_Spinner1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="추천생수"/>
 
         <Spinner
+            android:id="@+id/Frg_myrecipe3_Spinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="분쇄도"/>
 
         <Spinner
+            android:id="@+id/Frg_myrecipe3_Spinner3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="로스팅 정도"/>
 
         <Spinner
+            android:id="@+id/Frg_myrecipe3_Spinner4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="생산년도"/>
