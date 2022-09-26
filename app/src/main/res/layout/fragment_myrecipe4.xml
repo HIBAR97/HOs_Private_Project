@@ -17,7 +17,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe4_Spinner1"
+        android:id="@+id/Frg_myrecipe4_Spinner"
         android:layout_below="@+id/Frg_myrecipe4_TV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,11 +25,13 @@
         android:orientation="horizontal">
 
         <Spinner
+            android:id="@+id/Frg_myrecipe4_Spinner1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <Spinner
+            android:id="@+id/Frg_myrecipe4_Spinner2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
@@ -37,7 +39,7 @@
 
     <LinearLayout
         android:id="@+id/Frg_myrecipe4_TV2"
-        android:layout_below="@id/Frg_myrecipe4_Spinner1"
+        android:layout_below="@id/Frg_myrecipe4_Spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -50,19 +52,20 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe4_Spinner2"
+        android:id="@+id/Frg_myrecipe4_Spinner1_2"
         android:layout_below="@id/Frg_myrecipe4_TV2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Spinner
+            android:id="@+id/Frg_myrecipe4_Spinner3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/Frg_myrecipe4_TV3"
-        android:layout_below="@id/Frg_myrecipe4_Spinner2"
+        android:layout_below="@id/Frg_myrecipe4_Spinner1_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -75,19 +78,20 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe4_Spinner3"
+        android:id="@+id/Frg_myrecipe4_Spinner1_3"
         android:layout_below="@id/Frg_myrecipe4_TV3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Spinner
+            android:id="@+id/Frg_myrecipe4_Spinner4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/Frg_myrecipe4_TV4"
-        android:layout_below="@id/Frg_myrecipe4_Spinner3"
+        android:layout_below="@id/Frg_myrecipe4_Spinner1_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -100,19 +104,20 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe4_Spinner4"
+        android:id="@+id/Frg_myrecipe4_Spinner1_4"
         android:layout_below="@id/Frg_myrecipe4_TV4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Spinner
+            android:id="@+id/Frg_myrecipe4_Spinner5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/Frg_myrecipe4_TV5"
-        android:layout_below="@id/Frg_myrecipe4_Spinner4"
+        android:layout_below="@id/Frg_myrecipe4_Spinner1_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -125,12 +130,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Frg_myrecipe4_Spinner5"
+        android:id="@+id/Frg_myrecipe4_Spinner1_5"
         android:layout_below="@id/Frg_myrecipe4_TV5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Spinner
+            android:id="@+id/Frg_myrecipe4_Spinner6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </LinearLayout>
@@ -139,7 +145,7 @@
         android:id="@+id/Frg_myrecipe4_Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Frg_myrecipe4_Spinner5"
+        android:layout_below="@+id/Frg_myrecipe4_Spinner1_5"
         android:gravity="center"
         android:orientation="horizontal">
 

@@ -60,6 +60,11 @@
         <item>아이스</item>
     </string-array>
     
+    <string-array name="Coffee_Size">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
     <string-array name="Used_Beans">
         <item>15g</item>
     </string-array>
