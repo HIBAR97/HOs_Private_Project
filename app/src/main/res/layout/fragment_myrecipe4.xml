@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="레시피 이름 \n 원두 이름 / 브랜드 \n 원두 품종 / 생산지 / 프로세싱 \n 로스팅 정도 / 생산년도"
-            android:textSize="20dp"/>
+            android:textSize="15dp"/>
 
     </LinearLayout>
 

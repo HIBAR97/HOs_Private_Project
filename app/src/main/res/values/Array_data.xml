@@ -85,7 +85,7 @@
         <item>3</item>
     </string-array>
     
-    <!--    MyRecipe6_1 array-->
+    <!--    MyRecipe5, 6_1 array-->
     <string-array name="Temp">
         <item>90</item>
         <item>91</item>
@@ -94,6 +94,11 @@
         <item>94</item>
         <item>95</item>
         <item>96</item>
+    </string-array>
+
+    <string-array name="Input_Water">
+        <item>30g</item>
+        <item>40g</item>
     </string-array>
 
     <string-array name="Water_Flow">
