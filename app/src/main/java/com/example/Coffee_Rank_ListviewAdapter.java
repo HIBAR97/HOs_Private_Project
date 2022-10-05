@@ -1,5 +1,7 @@
 package com.example;
 
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -13,28 +15,54 @@ public class Coffee_Rank_ListviewAdapter extends BaseAdapter {
     private TextView CoffeeText;
     private ImageView CoffeeImage;
 
-    private ArrayList<Coffee_Rank_Item> listVuewItemList = new ArrayList<Coffee_Rank_Item>();
+    private ArrayList<Coffee_Rank_Item> listViewItemList = new ArrayList<Coffee_Rank_Item>();
 
+    public Coffee_Rank_ListviewAdapter(){
+
+    }
 
     @Override
     public int getCount() {
-        return Coffee_Rank_Item.size();
+        return listViewItemList.size();
     }
 
     @Override
-    public Object getItem(int i) {
-        return null;
+    public View getView(int position, View converView, ViewGroup parent){
+        final int pos = position;
+        final Context context = parent.getContext();
+
+        if (converView == null){
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            converView = inflater.inflate(R.layout.listview_coffee_ranking, parent, false);
+        }
+
+        CoffeeText = converView.findViewById(R.id.LV_Coffee_txt);
+        CoffeeImage = converView.findViewById(R.id.LV_Coffee_IV);
+
+        CoffeeText.setText(Coffee_Rank_Item.getTitle());
+        CoffeeImage.setImageResource(Coffee_Rank_Item.getIcon());
+
+        return converView;
     }
 
     @Override
-    public long getItemId(int i) {
-        return 0;
+    public long getItemId(int position) {
+        return position;
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
+    public Object getItem(int position) {
+        return listViewItemList.get(position);
     }
+
+
+    public void addItem(String title, int Image){
+        Coffee_Rank_Item Coffee_Rank_Item = new Coffee_Rank_Item();
+
+        Coffee_Rank_Item.setTitle(title);
+        Coffee_Rank_Item.setIcon(Image);
+
+        listViewItemList.add(Coffee_Rank_Item);
 
 
 }

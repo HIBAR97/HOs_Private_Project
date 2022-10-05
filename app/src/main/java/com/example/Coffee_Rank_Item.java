@@ -9,15 +9,12 @@ public class Coffee_Rank_Item {
         Coffee_text = title;
     }
 
-    public void setIcon(int icon){
-        iconDrawable = icon;
-    }
+    public void setIcon(int icon){iconDrawable = icon;}
+
+    public String getTitle(){return this.Coffee_text;}
 
     public int getIcon() {
         return this.iconDrawable;
     }
 
-    public String getCoffee_text(){
-        return this.Coffee_text;
-    }
 }
