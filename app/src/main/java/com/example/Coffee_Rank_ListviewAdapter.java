@@ -41,8 +41,8 @@ public class Coffee_Rank_ListviewAdapter extends BaseAdapter {
 
         Coffee_Rank_Item listViewItem = listViewItemList.get(position);
         
-        CoffeeText.setText(Coffee_Rank_Item.getTitle());
-        CoffeeImage.setImageResource(Coffee_Rank_Item.getIcon());
+        CoffeeText.setText(Coffee_Rank_Item.getCoffee_text());
+        CoffeeImage.setImageResource(Coffee_Rank_Item.getIconDrawable());
 
         return converView;
     }
@@ -61,8 +61,8 @@ public class Coffee_Rank_ListviewAdapter extends BaseAdapter {
     public void addItem(String title, int Image) {
         Coffee_Rank_Item Coffee_Rank_Item = new Coffee_Rank_Item();
 
-        Coffee_Rank_Item.setTitle(title);
-        Coffee_Rank_Item.setIcon(Image);
+        Coffee_Rank_Item.setCoffee_text(title);
+        Coffee_Rank_Item.setIconDrawable(Image);
 
         listViewItemList.add(Coffee_Rank_Item);
 
