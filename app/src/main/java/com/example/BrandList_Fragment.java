@@ -27,7 +27,7 @@ public class BrandList_Fragment extends Fragment {
         BrandListView = view.findViewById(R.id.Frg_board_ListView);
         BrandListView.setAdapter(adapter);
 
-        //adapter.addItem();
+        adapter.addItem("아이덴티티커피랩_에티오피아",R.drawable.ethiopia_banko);
 
         return view;
     }
